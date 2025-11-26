@@ -10,7 +10,7 @@
     <div class="container">
       <h1>Snakes</h1>
 
-      <div class="controls">
+      <div class="controls" id="controls">
         <label>
           <input type="radio" name="level" value="easy" checked />
           Easy
@@ -25,36 +25,13 @@
         </label>
       </div>
 
-      <div class="grid">
-        <div class="cell dot"></div>
-        <div class="cell dot"></div>
-        <div class="cell dot"></div>
-        <div class="cell dot"></div>
-        <div class="cell dot"></div>
+      <button id="startBtn">Start</button>
 
-        <div class="cell dot"></div>
-        <div class="cell snake"></div>
-        <div class="cell dot"></div>
-        <div class="cell dot"></div>
-        <div class="cell dot"></div>
+      <div id="message"></div>
 
-        <div class="cell dot"></div>
-        <div class="cell dot"></div>
-        <div class="cell dot"></div>
-        <div class="cell dot"></div>
-        <div class="cell dot"></div>
-
-        <div class="cell dot"></div>
-        <div class="cell dot"></div>
-        <div class="cell dot"></div>
-        <div class="cell food"></div>
-        <div class="cell dot"></div>
-
-        <div class="cell dot"></div>
-        <div class="cell dot"></div>
-        <div class="cell dot"></div>
-        <div class="cell dot"></div>
-        <div class="cell dot"></div>
+      <div class="game-area">
+        <svg id="lines" width="350" height="350"></svg>
+        <div class="grid" id="grid"></div>
       </div>
     </div>
 
